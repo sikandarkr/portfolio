@@ -47,7 +47,7 @@ yarn-error.log*
 
 # Gatsby files
 .cache/
-public/
+
 
 # Comment this if you want to debug on your localhost
 # Chrome Extensions

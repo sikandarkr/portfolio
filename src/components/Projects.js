@@ -52,14 +52,6 @@ const Projects = () => {
           "company": "DECATHLON"
       },
       {
-          "title": "Play(DECATHLON PLAY)",
-          "description": "Decathlon Play is an innovative platform by Decathlon that brings the sporting community together by offering a wide range of activities, events, and fitness challenges. It allows users to discover, book, and participate in sports events and activities tailored to their interests and skill levels. With a focus on promoting an active lifestyle, Decathlon Play connects sports enthusiasts and provides opportunities for everyone to stay engaged, fit, and motivated through community-driven experiences.",
-          "techStack": "Next Js, Redux, Redux Saga, Node Js, AWS, Mongo DB",
-          "Tools": "Jira, VS Code, Git",
-          "rolesResponsibilities": "drag and drop functionality implementation, creating designs, search play location and listing , api integration , debuging and fixing bugs",
-          "company": "DECATHLON"
-      },
-      {
           "title": "OONSPORT",
           "description": "A project about connecting of athlete, trainer, sports facility, organization where they can connect with one another with message. And trainer can post ad about new requirement, as well sports centre. One sports centre can have many trainers and one trainer can have many athletes. Here user can search user on the basic of user type (athlete, trainer, sports centre).",
           "techStack": "Next Js, Redux, Redux Saga, Node Js, AWS, Mongo DB",

@@ -40,7 +40,7 @@ const Header = () => {
         </div>
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <ul>
-            {['/', '/skills', '/projects', '/experience'].map((path, index) => (
+            {['/', '/Skills', '/Projects', '/Experience'].map((path, index) => (
               <li key={index}>
                 <Link 
                   to={path} 

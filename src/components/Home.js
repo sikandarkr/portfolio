@@ -9,7 +9,7 @@ const userData = {
   email: "royalsikandar25@gmail.com",
   phone: "+916360474553",
   whatsapp: "+916360474553",
-  linkedin: "https://www.linkedin.com/in/sikandar-kumar",
+  linkedin: "https://www.linkedin.com/in/sikandar-kumar-b2aa26ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   github: "https://github.com/royalsikandar",
   college: {
     name: "Corporate Institute of Science and Technology",

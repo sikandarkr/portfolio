@@ -10,7 +10,7 @@ const userData = {
   phone: "+916360474553",
   whatsapp: "+916360474553",
   linkedin: "https://www.linkedin.com/in/sikandar-kumar-b2aa26ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  github: "https://github.com/royalsikandar",
+  github: "https://github.com/sikandarkr",
   college: {
     name: "Corporate Institute of Science and Technology",
     location: "Madhya Pradesh, Bhopal",
@@ -47,7 +47,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-      {/* Waving smiley with bubble text */}
       <div className="waving-smiley">
         👋
         <div className="bubble-text">Hello!</div>

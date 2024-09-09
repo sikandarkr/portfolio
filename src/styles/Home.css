@@ -1,38 +1,25 @@
-/* Add styles for GitHub button */
-.github-btn {
-    background-color: #333;
-    color: white;
-    margin-top: 10px;
-  }
-  
-  .github-btn:hover {
-    background-color: #24292e;
-  }
-  
-  .github-icon {
-    margin-right: 10px;
-    font-size: 1.3em;
-  }
-  
-  /* Other existing styles */
-  .home {
+/* Main container */
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 80vh;
     background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
     padding: 20px;
-    padding-bottom: 50px; /* Added padding from bottom */
+    padding-bottom: 50px;
   }
   
+  /* Intro section */
   .intro {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
+    width: 100%;
   }
   
   .text-content {
@@ -175,6 +162,74 @@
     100% {
       transform: translateY(-60px);
       opacity: 0;
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .text-content {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .text-content h1 {
+      font-size: 2em;
+    }
+  
+    .text-content .role {
+      font-size: 1.5em;
+    }
+  
+    .text-content .description {
+      font-size: 1em;
+    }
+  
+    .contact-info p {
+      font-size: 1em;
+    }
+  
+    .image-content img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .connect-btn {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .text-content h1 {
+      font-size: 1.8em;
+    }
+  
+    .text-content .role {
+      font-size: 1.2em;
+    }
+  
+    .text-content .description {
+      font-size: 0.9em;
+    }
+  
+    .contact-info p {
+      font-size: 0.9em;
+    }
+  
+    .image-content img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .connect-btn {
+      font-size: 0.9em;
+      padding: 6px 12px;
     }
   }
   

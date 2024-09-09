@@ -7,7 +7,6 @@ const Skills = () => {
     { id: '1', name: "JavaScript (ES6+)" },
     { id: '2', name: "Node.js" },
     { id: '3', name: "Python Basics" },
-    { id: '4', name: "Python Basics" },
     { id: '5', name: "React.js" },
     { id: '6', name: "Redux" },
     { id: '7', name: "Express.js" },

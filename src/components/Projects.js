@@ -75,7 +75,7 @@ const Projects = () => {
   useEffect(() => {
     // Simulate fetching data
     setProjects(jsonData);
-  }, []);
+  }, [jsonData]);
 
   return (
     <section className="projects">

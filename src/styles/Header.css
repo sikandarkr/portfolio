@@ -1,0 +1,144 @@
+/* Header Styles */
+.header {
+    width: 100%;
+    background-color: #f4f4f4; /* Light color */
+    color: #333;
+    padding: 10px 20px;
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Ensure it's at the very top */
+    left: 0; /* Ensure it spans the entire width */
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: #ffffff; /* Change background on scroll */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.container {
+    max-width: 1200px; /* Constrain the width of the container */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Brand color */
+    text-transform: uppercase; /* Make logo text uppercase */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #007bff; /* Brand color */
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px 15px; /* Spacing around the text */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background-color: #007bff; /* Brand color */
+    color: #fff;
+}
+
+.nav ul li a.active {
+    background-color: #0056b3; /* Darker brand color */
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav {
+      position: fixed; /* Keep the menu fixed as well */
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      width: 60%; /* Reduced width for mobile */
+      height: 100%;
+      background-color: #f4f4f4;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; /* Align to the top */
+      padding: 20px; /* Add padding to create equal space */
+      transition: transform 0.3s ease;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.open {
+      transform: translateX(0);
+    }
+
+    .nav ul {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%; /* Ensure the ul takes the full width */
+    }
+
+    .nav ul li {
+      width: 100%; /* Ensure each list item takes full width */
+      margin-bottom: 10px;
+    }
+
+    .nav ul li a {
+      font-size: 1.2em;
+      padding-left: 20px; /* Add padding to align content */
+      padding-right: 20px; /* Add padding to align content */
+      display: block; /* Make the link take full width */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+      background-color: #007bff; /* Brand color */
+      color: #fff;
+    }
+
+    .nav ul li a.active {
+      background-color: #0056b3; /* Darker brand color */
+      color: #fff;
+    }
+}
+
+/* Add margin to the body content to avoid overlap with the fixed header */
+body {
+    margin-top: 70px; /* Adjust based on header height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+    color: #333;
+    line-height: 1.6;
+}

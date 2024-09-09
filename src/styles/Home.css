@@ -1,0 +1,180 @@
+/* Add styles for GitHub button */
+.github-btn {
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .github-btn:hover {
+    background-color: #24292e;
+  }
+  
+  .github-icon {
+    margin-right: 10px;
+    font-size: 1.3em;
+  }
+  
+  /* Other existing styles */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+    padding: 20px;
+    padding-bottom: 50px; /* Added padding from bottom */
+  }
+  
+  .intro {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+  }
+  
+  .text-content {
+    max-width: 60%;
+    margin-right: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h1 .highlight {
+    color: #2c3e50;
+  }
+  
+  .text-content .role {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .text-content .description {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .contact-info p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .icon {
+    margin-right: 8px;
+    color: #e74c3c;
+  }
+  
+  .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #2980b9;
+  }
+  
+  .college-name {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .college-duration {
+    font-weight: lighter;
+    color: #7f8c8d;
+  }
+  
+  .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  .connect-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0077b5;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .connect-btn:hover {
+    background-color: #005582;
+  }
+  
+  .linkedin-icon {
+    margin-right: 10px;
+    font-size: 1.3em;
+  }
+  
+  /* Waving smiley */
+  .waving-smiley {
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    animation: wave 1s infinite;
+    z-index: 1000;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .bubble-text {
+    font-size: 0.8em;
+    margin-left: 5px;
+    opacity: 0;
+    animation: bubble 3s infinite;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+  }
+  
